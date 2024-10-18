@@ -1,0 +1,15 @@
+nav ul{
+    list-style: none;
+}
+
+span.left-align{
+    float: left;
+}
+
+span.right-align{
+    float: right;
+}
+
+section, form {
+    margin-bottom: 15px;
+}
