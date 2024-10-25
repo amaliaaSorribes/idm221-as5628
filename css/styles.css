@@ -1,5 +1,59 @@
-nav ul{
+html {
+    --white: white;
+    --cream: #FFF5E7;
+    --yellow: #FFD471;
+    --light-purple: #EEC3F9;
+    --dark-purple: #8B08AF;
+    --grey: #3D3D3D;
+    background-color: var(--cream);
+    color: var(--grey);
+    font-family: sans-serif;
+    line-height: 20px;
+}
+
+nav, footer {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+footer {
+    margin-top: 60px;
+    padding-left: 2rem;
+    padding-bottom: 40px;
+}
+
+nav ul li{
     list-style: none;
+    margin-bottom: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    background-color: var(--yellow);
+}
+
+nav ul li a:active{
+    transition: all 2s ease;
+    background-color: var(--light-purple);
+}
+
+h1 {
+    text-align: center;
+    color: var(--dark-purple);
+    letter-spacing: -1px;
+}
+
+h2.art {
+    margin-top: 2px;
+}
+
+section, article, div.form-container {
+    margin: 2rem;
 }
 
 span.left-align{
@@ -10,6 +64,29 @@ span.right-align{
     float: right;
 }
 
-section, form {
+section span.left-align:first-of-type {
+    font-weight: bold;
+}
+
+section span:nth-of-type(3) {
+    text-decoration: underline;
+}
+
+section, input, textarea {
     margin-bottom: 15px;
+}
+
+div.container {
+    display: flex;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+div.column {
+    flex: 1;
+    padding: 12px;
+}
+
+dd {
+    margin-top: 10px;
 }
