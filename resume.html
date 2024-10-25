@@ -10,23 +10,32 @@
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <ul>
-                <li><a href="cs.html">Computer Science</a></li>
-                <li><a href="ux.html">User Experience</a></li>
-                <li><a href="art.html">Art</a></li>
-            </ul>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" class="active">AS</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div class="menu-icon">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </div>
+            </a>
+            <div id="myLinks">
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <ul>
+                    <li><a href="cs.html">Computer Science</a></li>
+                    <li><a href="ux.html">User Experience</a></li>
+                    <li><a href="art.html">Art</a></li>
+                </ul>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
         </ul>
     </nav>
     <h1 id="top">Resume</h1>
+    <h2>Professional Experience</h2>
     <section>
-        <h2>Professional Experience</h2>
         <span class="left-align">Drexel University</span>
-        <span class="right-align">Philadelphia, PA</span>
+        <span class="right-align">Philadelphia</span>
         <br>
         <span class="left-align">Teacher Assistant</span>
         <span class="right-align">Sept. 2023 - Present</span>
@@ -41,7 +50,7 @@
     </section>
     <section>
         <span class="left-align">Reading Terminal Market</span>
-        <span class="right-align">Philadelphia, PA</span>
+        <span class="right-align">Philadelphia</span>
         <br>
         <span class="left-align">Digital Marketing Intern</span>
         <span class="right-align">April - Sept. 2024</span>
@@ -77,10 +86,10 @@
             <li>Automatization in Arduino and Nextion Display encouraging hardware experience.</li>
         </dd>
     </section>
+    <h2>Academic Projects</h2>
     <section>
-        <h2>Academic Projects</h2>
         <span class="left-align">Mobile App "PillBase"</span>
-        <span class="right-align">Philadelphia, PA</span>
+        <span class="right-align">Philadelphia</span>
         <br>
         <span class="left-align">Front-end Developer</span>
         <span class="right-align">January - June 2022</span>
@@ -92,7 +101,7 @@
     </section>
     <section>
         <span class="left-align">Virtual Pet "Tuby"</span>
-        <span class="right-align">Philadelphia, PA</span>
+        <span class="right-align">Philadelphia</span>
         <br>
         <span class="left-align">Full Stack Developer</span>
         <span class="right-align">December 2021</span>
@@ -102,13 +111,14 @@
             Documented the project in an HTML website containing a state machine and a link to run the program.
         </dd>
     </section>
+    <h2>Awards & Activities</h2>
     <section>
-        <h2>Awards & Activities</h2>
         <li>A. J. Drexel Scholarship, 2021- Present</li>
         <li>Participant, ICAI STEM Summer Camp, 2014-2019</li>
         <li>Participant, ESNE Animation Summer Camp, 2020</li>
     </section>
-    <a href="#top">jumps to top</a>
+    <!-- <a href="#top">jumps to top</a> -->
     <footer><a href="https://www.linkedin.com/in/amalia-sorribes-a91577240/" target="_blank">LinkedIn</a></footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

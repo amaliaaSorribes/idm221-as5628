@@ -10,16 +10,25 @@
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <ul>
-                <li><a href="cs.html">Computer Science</a></li>
-                <li><a href="ux.html">User Experience</a></li>
-                <li><a href="art.html">Art</a></li>
-            </ul>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" class="active">AS</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div class="menu-icon">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </div>
+            </a>
+            <div id="myLinks">
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <ul>
+                    <li><a href="cs.html">Computer Science</a></li>
+                    <li><a href="ux.html">User Experience</a></li>
+                    <li><a href="art.html">Art</a></li>
+                </ul>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
         </ul>
     </nav>
     <h1>Computer Science</h1>
@@ -27,12 +36,17 @@
     <h3>Concentrations:</h3>
         <li>Human-Computer Interaction</li>
         <li>Artificial Intelligence</li>
+    </section>
+    <section>
     <h3>Skills:</h3>
         <li><b>Programming Languages:</b> HTML, CSS, JavaScript, C, C++, Java, Python, Linux, Racket, Arduino.</li>
         <li><b>Frameworks:</b> Figma, WordPress, Jira, React, GitHub, Illustrator, Photoshop, Flutter, Android Studio, Firebase.</li>
+    </section>
+    <section>
     <h3>Relevant Coursework:</h3>
         Systems Architecture, Concurrent Programming, Data Structures, Artificial Intelligence, Math Foundations of Comp Sci.
     </section>
     <footer><a href="https://www.linkedin.com/in/amalia-sorribes-a91577240/" target="_blank">LinkedIn</a></footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

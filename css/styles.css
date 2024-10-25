@@ -1,8 +1,10 @@
 html {
     --white: white;
-    --cream: #FFF5E7;
+    --cream: #fef3e3;
+    --light-cream: #fffdf7;
     --yellow: #FFD471;
-    --light-purple: #EEC3F9;
+    --dark-yellow: #edb226;
+    --light-purple: #e6c1ef;
     --dark-purple: #8B08AF;
     --grey: #3D3D3D;
     background-color: var(--cream);
@@ -11,49 +13,119 @@ html {
     line-height: 20px;
 }
 
-nav, footer {
-    background-color: white;
-    padding-top: 20px;
-    padding-bottom: 15px;
-}
-
 footer {
+    background-color: var(--white);
+    padding-top: 20px;
     margin-top: 60px;
     padding-left: 2rem;
     padding-bottom: 40px;
+    background-color: var(--light-purple);
+}
+
+nav {
+    padding: 2px;
+}
+
+nav ul {
+    overflow: hidden;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--light-purple);
+}
+
+nav ul #myLinks {
+    display: none;
+    background-color: var(--light-cream);
+}
+
+#moreText {
+    display: none;
+}
+
+nav ul #myLinks li {
+    border-bottom: 2px solid var(--light-purple);
+    color: var(--dark-purple);
+    font-size: 18px;
+}
+
+nav ul li .active {
+    color: var(--dark-purple);
+    font-weight: 700;
+    font-size: 18px;
+    margin: 5px;
+    padding: 4px;
+}
+
+nav ul a.icon {
+    display: block;
+    position: absolute;
+    right: 2em;
+    top: 0;
+}
+
+.menu-icon {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu-line {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--dark-purple);
+    margin: 5px 0;
 }
 
 nav ul li{
     list-style: none;
-    margin-bottom: 20px;
+    padding: 10px;
 }
 
 nav ul li a{
     text-decoration: none;
-    padding: 5px;
-    padding-left: 10px;
     padding-right: 10px;
-    border-radius: 15px;
-    background-color: var(--yellow);
 }
 
-nav ul li a:active{
-    transition: all 2s ease;
-    background-color: var(--light-purple);
+nav ul div ul {
+    padding-left: 3rem;
+    background-color: var(--light-cream);
 }
 
 h1 {
     text-align: center;
     color: var(--dark-purple);
     letter-spacing: -1px;
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: 200px;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 2.5rem;
+    padding: 5px;
+    background-color: var(--light-purple);
 }
 
 h2.art {
-    margin-top: 2px;
+    margin-top: 2px;    
+    background-color: var(--dark-yellow);
+    color: var(--cream);
+    font-weight: 900;
+    letter-spacing: 1px;
 }
 
-section, article, div.form-container {
+section, article, div.form-container, div.intro {
     margin: 2rem;
+}
+
+section {
+    background-color: var(--white);
+    padding: 8px;
+    border-radius: 20px;
 }
 
 span.left-align{
@@ -89,4 +161,15 @@ div.column {
 
 dd {
     margin-top: 10px;
+}
+
+button, input[type="submit"] {
+    background-color: var(--yellow);
+    border: 2px solid var(--dark-yellow);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+h3 {
+    margin-top: 2px;
 }
