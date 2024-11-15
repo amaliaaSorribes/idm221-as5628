@@ -4,6 +4,7 @@ html {
     --light-cream: #fffdf7;
     --yellow: #FFD471;
     --dark-yellow: #edb226;
+    --very-light-purple: #f2dff7;
     --light-purple: #e6c1ef;
     --dark-purple: #8B08AF;
     --grey: #3D3D3D;
@@ -31,15 +32,130 @@ html {
     line-height: 20px;
 }
 
+header {
+    background: var(--light-purple);
+    height: 48px;
+    width: 100%;
+  
+    position: fixed;
+    left: 0;
+    top: 0;
+  
+    .logo {
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        z-index: 1000;
+        color: var(--dark-purple);
+        font-family: 'Grandstander', Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    label {
+      cursor: pointer;
+      height: 20px;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      width: 26px;
+      z-index: 1001;
+  
+      span {
+        background-color: var(--dark-purple);
+        border-radius: 2px;
+        display: block;
+        height: 3px;
+        position: absolute;
+        width: 100%;
+  
+        transform-origin: left;
+  
+        &:nth-child(1) {
+          top: 0;
+        }
+  
+        &:nth-child(2) {
+          top: 8px;
+        }
+  
+        &:nth-child(3) {
+          top: 16px;
+        }
+      }
+    }
+}
+  
+nav {
+    background: var(--very-light-purple);
+    height: 100vh;
+    margin-block-start: 48px;
+    width: 300px;
+  
+    position: fixed;
+    right: -300px;
+    top: 0;
+    z-index: 1000;
+  
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        padding: 0;
+  
+        a {
+          color: var(--dark-purple);
+          display: block;
+          font-size: 1.25rem;
+          padding-block: 1rem;
+          padding-inline: 1rem;
+          text-decoration: none;
+  
+          &:hover {
+            background-color: var(--light-purple);
+          }
+        }
+      }
+
+      .sub {
+        margin-left: 25px;
+      }
+    }
+}
+  
+/* Show nav when checkbox is checked */
+.nav-toggle:checked ~ nav {
+    right: 0;
+}
+  
+.nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
+    transform: rotate(45deg);
+    top: -2px; /* Fix */
+}
+  
+.nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
+    opacity: 0;
+}
+  
+.nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+main {
+    margin-top: 75px;
+}
+
 h1 {
     font-family: 'Grandstander', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
-    font-size: 2.25rem;
+    font-size: 2.25em;
     text-transform: uppercase;
     text-align: center;
     color: var(--dark-purple);
     letter-spacing: -1px;
-    margin-top: 40px;
 }
 
 h2 {
@@ -51,6 +167,13 @@ h2 {
     font-weight: 600;
     background-color: var(--light-purple);
     color: var(--dark-purple);
+}
+
+h2.art {
+    background-color: var(--dark-yellow);
+    color: var(--cream);
+    letter-spacing: 1px;
+    margin-top: 0;
 }
 
 h3 {
@@ -66,81 +189,10 @@ footer {
     background-color: var(--light-purple);
 }
 
-nav ul {
-    overflow: hidden;
-    position: relative;
-    padding: 0px;
-    margin: 0px;
-    background-color: var(--light-purple);
-}
-
-nav ul #myLinks {
-    display: none;
-    background-color: var(--light-cream);
-}
-
 #moreText {
     display: none;
 }
 
-nav ul #myLinks li {
-    border-bottom: 2px solid var(--light-purple);
-    color: var(--dark-purple);
-    font-size: medium;
-}
-
-nav ul li .active {
-    color: var(--dark-purple);
-    font-family: 'Grandstander', Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    margin: 5px;
-    padding: 4px;
-}
-
-nav ul a.icon {
-    display: block;
-    position: absolute;
-    right: 2em;
-    top: 0;
-}
-
-.menu-icon {
-    margin-top: 10px;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
-
-.menu-line {
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--dark-purple);
-    margin: 5px 0;
-}
-
-nav ul li{
-    list-style: none;
-    padding: 10px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    padding-right: 10px;
-}
-
-nav ul div ul {
-    padding-left: 3rem;
-    background-color: var(--light-cream);
-}
-
-h2.art {
-    margin-top: 2px;    
-    background-color: var(--dark-yellow);
-    color: var(--cream);
-    letter-spacing: 1px;
-}
 
 section {
     background-color: var(--white);
@@ -161,7 +213,7 @@ span.right-align{
 }
 
 section span.left-align:first-of-type {
-    font-weight:bolder;
+    font-weight: bolder;
 }
 
 section span:nth-of-type(3) {
@@ -184,6 +236,7 @@ section.art {
 div.container {
     display: flex;
     padding-bottom: 0px;
+    margin-top: 15px;
 }
 
 div.column {

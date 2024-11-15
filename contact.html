@@ -8,46 +8,46 @@
     <title>Amalia Sorribes</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">AS</a></li>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <div class="menu-icon">
-                    <span class="menu-line"></span>
-                    <span class="menu-line"></span>
-                    <span class="menu-line"></span>
-                </div>
-            </a>
-            <div id="myLinks">
+    <header>
+        <a href="index.html" class="logo">AS</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden/>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav>
+            <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <ul>
+                <ul class="sub">
                     <li><a href="cs.html">Computer Science</a></li>
                     <li><a href="ux.html">User Experience</a></li>
                     <li><a href="art.html">Art</a></li>
                 </ul>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
-            </div>
-        </ul>
-    </nav>
-    <h1>Contact</h1>
-    <div class="form-container">
-        <form action="process_form.php" method="post">
-            <label for="name">Name</label><br>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="phone">Phone</label><br>
-            <input type="phone" id="phone" name="phone" optional><br>
-            <label for="subject">Subject</label><br>
-            <input type="subject" id="subject" name="subject" required><br>
-            <label for="message">Message</label><br>
-            <textarea id="message" name="message" required></textarea><br>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact</h1>
+        <div class="form-container">
+            <form action="process_form.php" method="post">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="phone">Phone</label><br>
+                <input type="phone" id="phone" name="phone" optional><br>
+                <label for="subject">Subject</label><br>
+                <input type="subject" id="subject" name="subject" required><br>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
     <footer><a href="https://www.linkedin.com/in/amalia-sorribes-a91577240/" target="_blank">LinkedIn</a></footer>
-    <script src="js/script.js"></script>
 </body>
 </html>
