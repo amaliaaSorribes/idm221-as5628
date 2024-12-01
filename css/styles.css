@@ -4,8 +4,10 @@ html {
     --light-cream: #fffdf7;
     --yellow: #FFD471;
     --dark-yellow: #edb226;
+    --darker-yellow: #a87f1d;
     --very-light-purple: #f2dff7;
     --light-purple: #e6c1ef;
+    --medium-purple: #e391f8;
     --dark-purple: #8B08AF;
     --grey: #3D3D3D;
     background-color: var(--cream);
@@ -170,16 +172,53 @@ h2 {
 }
 
 h2.art {
-    background-color: var(--dark-yellow);
-    color: var(--cream);
+    
     letter-spacing: 1px;
     margin-top: 0;
 }
 
 h3 {
-    margin-top: 2px;
+    margin-top: 4px;
     color: var(--dark-purple);
-    font-size: small;
+    font-size: medium;
+}
+
+b {
+    font-family: 'Grandstander', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--medium-purple);
+}
+
+.internalLink {
+    font-weight: 700;
+}
+
+h1 {
+    position: fixed; 
+    top: 15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flowers {
+    position: fixed;
+    z-index: -2;
+}
+
+/* .separator {
+    position: fixed; 
+    top: 48px; 
+    height: 28px; 
+    width: 100%; 
+    background-color: var(--cream); 
+    z-index: 1002;
+} */
+
+.index section {
+    z-index: -1;
 }
 
 footer {
@@ -250,8 +289,9 @@ dd {
 }
 
 dd.list {
-    margin-left: 5px;
+    margin: 8px 5px;
 }
+
 
 input, textarea {
     border-radius: 8px;
@@ -271,4 +311,10 @@ button, input[type="submit"] {
     border-radius: 20px;
     width: auto;
     height: auto;
+}
+
+img.amalia {
+    border-radius: 100px;
+    float: right;
+    margin: 12px;
 }
