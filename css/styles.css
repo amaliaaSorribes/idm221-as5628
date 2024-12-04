@@ -62,7 +62,7 @@ header {
       right: 1rem;
       top: 1rem;
       width: 26px;
-      z-index: 1001;
+      z-index: 101;
   
       span {
         background-color: var(--dark-purple);
@@ -98,7 +98,7 @@ nav {
     position: fixed;
     right: -300px;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
   
     ul {
       list-style: none;
@@ -205,19 +205,16 @@ h1 {
 
 .flowers {
     position: fixed;
+    z-index: -3;
+}
+
+.index section {
+    position: relative;
     z-index: -2;
 }
 
-/* .separator {
-    position: fixed; 
-    top: 48px; 
-    height: 28px; 
-    width: 100%; 
-    background-color: var(--cream); 
-    z-index: 1002;
-} */
-
-.index section {
+img.amaliaPNG {
+    position: fixed;
     z-index: -1;
 }
 
@@ -283,6 +280,10 @@ div.column {
     padding: 12px;
 }
 
+div.columns3 {
+    flex: 1;
+}
+
 dd {
     margin-top: -8px;
     margin-left: 30px;
@@ -311,6 +312,7 @@ button, input[type="submit"] {
     border-radius: 20px;
     width: auto;
     height: auto;
+    margin: 8px;
 }
 
 img.amalia {
@@ -318,3 +320,9 @@ img.amalia {
     float: right;
     margin: 12px;
 }
+
+img.handOrange {
+    position: absolute;
+    bottom: 180px;
+    right: 5px;
+} 
