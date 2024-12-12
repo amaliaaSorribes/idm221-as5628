@@ -2,6 +2,7 @@ html {
     --white: white;
     --cream: #fef3e3;
     --light-cream: #fffdf7;
+    --bisque: #ffe4cc;
     --yellow: #FFD471;
     --dark-yellow: #edb226;
     --darker-yellow: #a87f1d;
@@ -371,7 +372,7 @@ main.art {
         background-image: url('../images/shirtCantabria.webp');
     }
     #charcoal {
-        background-image: url('../images/thinker.jpg');
+        background-image: url('../images/thinker.webp');
     }
 }
 
@@ -387,7 +388,7 @@ main.ux {
     }
 
     section.projects {
-        background-color: bisque;
+        background-color: var(--bisque);
     }
 
     section.projects section:first-of-type {
